@@ -6,8 +6,6 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import article from "./assets/article.png";
 import turf from "./assets/turflogo.jpg";
-// import wallet from "./assets/wallet.png";
-// import montm from "./assets/montm.png";
 import turfbg from "./assets/turfbg.png";
 import bloglogo from "./assets/bloglogo.png";
 import react from "./assets/react.svg";
@@ -18,8 +16,9 @@ import tailwind from "./assets/tailwind.svg";
 import postgres from "./assets/postgresql.svg";
 import gmail from "./assets/gmail.png";
 import discord from "./assets/discord.png";
-import wallet from "./assets/wallet.png"
-import montm from "./assets/montm.png"
+
+import elearning from "./assets/learning.jpg"
+import courshala from "./assets/courshala.jpg"
 
 
 interface ProjectCardProps {
@@ -118,6 +117,14 @@ export default function Home() {
           {/* lg:grid-cols-3 */}
 
           <ProjectCard
+              title="E-Learning Website"
+              description="An application where can choose to enroll as either a USER or a TUTOR. As a USER, they can enroll in various courses, while TUTORS have the ability to upload instructional videos and manage course content."
+              logoSrc={elearning}
+              thumbnailSrc={courshala}
+              link="https://strentor-frontend.vercel.app/"
+            />
+
+          <ProjectCard
               title="Turf Booking"
               description="An application where you can book turfs for various sports and have a good time with your friends"
               logoSrc={turf}
@@ -131,15 +138,6 @@ export default function Home() {
               logoSrc={article}
               thumbnailSrc={bloglogo}
               link="https://blogs.thechaicoder.com/"
-            />
-
-            
-            <ProjectCard
-              title="Wallet"
-              description="An application where you can store your money and track your expenses and send money to your friends"
-              logoSrc={wallet}
-              thumbnailSrc={montm}
-              link="https://montm.thechaicoder.com/"
             />
             
             
